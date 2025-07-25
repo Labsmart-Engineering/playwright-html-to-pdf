@@ -41,9 +41,9 @@ async def html_to_pdf(html_file: str, output_file: str = None, **pdf_options):
             'print_background': True,
             'margin': {
                 'top': '0',
-                'right': '30px',
+                'right': '0',
                 'bottom': '0',
-                'left': '30px'
+                'left': '0'
             }
         }
         
