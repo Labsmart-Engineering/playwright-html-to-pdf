@@ -10,6 +10,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.blue-container {
+    background-color: blue;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: red;
+}
+
 h1 {
     color: #2c3e50;
     margin-bottom: 20px;
