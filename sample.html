@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        ul {
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML to PDF Conversion Sample</h1>
+        
+        <p>This is a sample HTML document designed to demonstrate the HTML to PDF conversion capabilities using Playwright. The document includes various styling elements to showcase how well the conversion preserves the original formatting.</p>
+        
+        <div class="highlight">
+            <strong>📝 Note:</strong> This document demonstrates various HTML elements and CSS styling that should be preserved in the PDF output.
+        </div>
+        
+        <h2>Features Demonstrated</h2>
+        <ul>
+            <li><strong>Typography:</strong> Different font weights, sizes, and colors</li>
+            <li><strong>Layout:</strong> Responsive design with centered content</li>
+            <li><strong>Styling:</strong> Gradients, shadows, borders, and rounded corners</li>
+            <li><strong>Content Structure:</strong> Headers, paragraphs, lists, and code blocks</li>
+        </ul>
+        
+        <h2>Sample Code Block</h2>
+        <div class="code-block">
+# Python example
+def html_to_pdf(html_file, output_file=None):
+    """Convert HTML to PDF using Playwright"""
+    async with async_playwright() as p:
+        browser = await p.chromium.launch()
+        page = await browser.new_page()
+        await page.goto(f"file://{html_file}")
+        await page.pdf(path=output_file, format='A4')
+        await browser.close()
+        </div>
+        
+        <h2>Benefits of Playwright for PDF Generation</h2>
+        <ul>
+            <li>High-fidelity rendering that matches browser output</li>
+            <li>Support for modern CSS features and JavaScript</li>
+            <li>Customizable PDF options (margins, format, orientation)</li>
+            <li>Ability to wait for dynamic content to load</li>
+            <li>Cross-platform compatibility</li>
+        </ul>
+        
+        <div class="highlight">
+            <strong>💡 Tip:</strong> You can customize the PDF generation by modifying the options in the Python script, such as page format, margins, and print background settings.
+        </div>
+        
+        <div class="footer">
+            Generated with Playwright HTML to PDF Converter<br>
+            <em>This document serves as a test case for PDF conversion quality</em>
+        </div>
+    </div>
+</body>
+</html>
