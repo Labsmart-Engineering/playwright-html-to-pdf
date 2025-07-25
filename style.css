@@ -161,6 +161,8 @@ body {
 
 /* line 93, /Users/sachin/Documents/GitHub/labsmart-lis/app/assets/stylesheets/print_and_screen/lab_report_v2/case_info_area.scss */
 .v2-qr-code-content {
+  display: flex;
+  justify-content: center;
   width: 100%;
   text-align: center;
 }
@@ -192,7 +194,7 @@ body {
 
 /* line 9, /Users/sachin/Documents/GitHub/labsmart-lis/app/assets/stylesheets/print_and_screen/lab_report_v2/v2_media_screen_and_wk.scss */
 .v2-text-sm {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* line 13, /Users/sachin/Documents/GitHub/labsmart-lis/app/assets/stylesheets/print_and_screen/lab_report_v2/v2_media_screen_and_wk.scss */
